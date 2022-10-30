@@ -100,13 +100,14 @@ main{
     font-family: "Times New Roman", serif;
 }
 #picshow{
-    width: 20rem;
-    height: 20rem;
+    width: 17rem;
+    height: 17rem;
     border-style: solid;
     border-width: 3px;
     display: inline-block;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    opacity: 0.8;
 }
 #ps{
     display: flex;
@@ -175,7 +176,7 @@ top: 30%;
     }
 }
 .back1{
-    animation: f1 14s infinite;
+    animation: f1 14s linear infinite;
 }
 #t1{
     position: absolute;
