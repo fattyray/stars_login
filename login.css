@@ -1,0 +1,215 @@
+html{font-size:10px}
+@media screen and (min-width:321px) and (max-width:375px)
+{html{font-size:11px}
+}
+@media screen and (min-width:376px) and (max-width:414px)
+{html{font-size:12px}}
+@media screen and (min-width:415px) and (max-width:639px)
+{html{font-size:15px}}
+@media screen and (min-width:640px) and (max-width:719px)
+{html{font-size:20px}}
+@media screen and (min-width:720px) and (max-width:749px)
+{html{font-size:22px}}
+@media screen and (min-width:750px) and (max-width:799px)
+{html{font-size:23px}}
+@media screen and (min-width:800px){html{font-size:25px}}
+
+header{
+    width: 100vw;
+    height: 3.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+
+}
+#logo
+{
+    font-family: "Freestyle Script",serif;
+    text-align:center;
+    line-height: 100%;
+    color: aqua;
+    font-size: 3rem;
+}
+.down_slash
+{
+    width: 5%;
+    height: 90%;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: aqua;
+
+}
+
+main {
+    width: 98vw;
+    height: 80vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#description
+{
+    width: 65%;
+    height: 100%;
+    font-size: 1.5rem;
+}
+#login
+{
+    width: 35%;
+    height: 100%;
+    position: relative;
+
+}
+
+@media screen and (max-width: 990px) {
+main{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 150vh;
+    justify-content: left;
+    flex-direction: column;
+}
+    #description
+    {
+        width: 99%;
+        height: 60%;
+    }
+    #login
+    {
+        width: 99%;
+        height: 40%;
+        position: relative;
+
+    }
+}
+
+#description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#description h2{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: "Times New Roman", serif;
+}
+#picshow{
+    width: 20rem;
+    height: 20rem;
+    border-style: solid;
+    border-width: 3px;
+    display: inline-block;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ps{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+
+
+#login form{
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 20% 20%;
+
+
+    background-image: url("wreat.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#login form div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: auto;
+    position: relative;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.form_content{
+    font-size: 1.2rem;
+    font-family: "幼圆", cursive;
+}
+#login form div:last-child{
+    font-size: 0.9rem;
+    color: grey;
+    margin-top: 1px;
+}
+#checkbox1{
+    position: absolute;
+left: 90%;
+top: 30%;
+}
+
+
+#back{
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+    position: fixed;
+}
+
+@keyframes f1 {
+    from{
+
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.back1{
+    animation: f1 14s infinite;
+}
+#t1{
+    position: absolute;
+    top:3%;
+    left: 10%;
+    border-radius: 5%;
+    width: 8vw;
+    height: 8vw;
+    background-color: rgba(55,200,130,0.7);
+}
+
+#t2 {
+    border-radius: 25%;
+    width: 12vw;
+    height: 12vw;
+    background-color: rgba(221, 160, 221, 0.9);
+    position: absolute;
+    left: 40%;
+    top: 45%;
+}
+#t3 {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 10%;
+    background-color: rgba(50, 50, 200, 0.3);
+    position: absolute;
+    right: 10%;
+    top: 25%;
+
+}
+.rgb{
+    transition: color 3s linear;
+}
+
+body{
+    background-color: lightgreen;
+}
