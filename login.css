@@ -26,6 +26,7 @@ body{
     height: 100vh;
 
 }
+
 #logo
 {
     font-family: "Freestyle Script",serif;
@@ -79,14 +80,61 @@ main {
     font-family: "Times New Roman", serif;
 }
 #picshow{
-    width: 17rem;
-    height: 17rem;
+    position: absolute;
+    left: 3rem;
+    top:3rem;
+    width: 13rem;
+    height: 13rem;
     border-style: solid;
     border-width: 3px;
     display: inline-block;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    border-radius: 15%;
+    z-index: 3;
+    transition: opacity 2s linear;
+}
+#bubble{
+    animation: ro 4.5s infinite;
+    rotation-point: center;
+    left: -2.5rem;
+    top: -2.5rem;
+    width: 25rem;
+    height:25rem;
+    transition: opacity 0.5s linear;
+}
+@keyframes ro {
+    0%{
+        transform: rotate(0deg);
+
+        width: 25rem;
+        height:25rem;
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#bubble{
+    position: absolute;
+    display: inline-block;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("bubble.png");
     opacity: 0.8;
+    z-index: 1;
+
+}
+#showcase
+{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    transition: transo;
+    z-index: 2;
+    position:relative;
 }
 #ps{
     display: flex;
@@ -107,7 +155,7 @@ main {
     #description
     {
         width: 99%;
-        height: 50%;
+        height: 120%;
     }
     #login
     {
@@ -117,8 +165,16 @@ main {
 
     }
     #picshow{
-        width:30rem ;
+        left: 3rem;
+        top:3rem;
+        width:24rem ;
+        height: 24rem;
+    }
+    #showcase
+    {
+        width: 30rem;
         height: 30rem;
+
     }
 
 }
@@ -216,10 +272,10 @@ top: 30%;
     border-radius: 25%;
     width: 12vw;
     height: 12vw;
-    background-color: rgba(221, 160, 221, 0.9);
+    background-color: rgba(210, 67, 150, 0.9);
     position: absolute;
-    left: 40%;
-    top: 45%;
+    left: 56%;
+    top: 55%;
 }
 #t3 {
     width: 10vw;
@@ -236,5 +292,7 @@ top: 30%;
 }
 
 body{
-    background-color: lightgreen;
+    background-image: url("back.jpg");
+    background-size: 100% 100%;
+    background-repeat: repeat-y;
 }
