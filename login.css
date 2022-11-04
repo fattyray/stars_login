@@ -256,7 +256,76 @@ top: 30%;
     }
 }
 .back1{
+    z-index: -999;
+    position: fixed;
     animation: f1 14s linear infinite;
+}
+.back2{
+    z-index: 2;
+    position: absolute;
+    background-image: url("flower.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 6rem;
+    height: 6rem;
+    display: inline-block;
+    left: 45%;
+    top: 10%;
+
+}
+#t4
+{
+    animation: fall1 12s linear infinite;
+}
+@keyframes fall1 {
+    0%{
+        left: 45%;
+        top: 10%;
+    }
+    22%{
+        left: 48%;
+        top: 30%;
+    }
+    50%{
+        left: 52%;
+        top: 50%;
+    }
+    70%{
+        left: 55%;
+        top: 60%;
+    }
+    100%
+    {
+        left: 50%;
+        top: 80%;
+    }
+}
+#t5
+{
+    animation: fallq 12s linear infinite;
+}
+@keyframes fallq {
+    0%{
+        left:  15%;
+        top: 10%;
+    }
+    22%{
+        left: 10%;
+        top: 44%;
+    }
+    50%{
+        left: 1%;
+        top: 60%;
+    }
+    70%{
+        left: 3%;
+        top: 70%;
+    }
+    100%
+    {
+        left: 5%;
+        top: 90%;
+    }
 }
 #t1{
     position: absolute;
