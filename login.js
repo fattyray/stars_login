@@ -50,7 +50,6 @@ submit.onclick=function (event){
 
     event.preventDefault();
 }
-
 // Storage.regestered=0;
 // alert(Storage.regestered)
 if (Storage.regestered=='0')
