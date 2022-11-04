@@ -35,9 +35,10 @@ submit.onclick=function (event){
             Storage.regestered=1;
             Storage.account=ac;
             Storage.password=pas;
+            submit.value="登录";
         }
     }
-    if (Storage.regestered=='1')
+    else if (Storage.regestered=='1')
     {
         let ac=account.value;
         let pas =password.value;
