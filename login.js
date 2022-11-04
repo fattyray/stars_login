@@ -56,6 +56,11 @@ if (Storage.regestered=='0')
 {
     submit.value="开始注册";
 }
-else {
+else if (Storage.regestered=='1') {
     submit.value="登录";
+}
+else
+{
+    Storage.regestered=0;
+    submit.value="开始注册";
 }
