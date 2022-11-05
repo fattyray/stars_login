@@ -43,7 +43,10 @@ submit.onclick=function (event){
         let ac=account.value;
         let pas =password.value;
         if(ac==Storage.account && pas==Storage.password)
+        {
             alert("登陆成功");
+            location.href="https://fattyray.github.io/fattyrays_homepage/"
+        }
         else
         alert("账户名出错或者是密码出错");
     }
